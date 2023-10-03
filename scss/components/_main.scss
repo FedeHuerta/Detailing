@@ -1,0 +1,300 @@
+/*!----------MAIN------------- */
+
+/*---------INDEX---------*/
+main{
+    .whoami{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 750px;
+        margin: auto;
+        padding-top: 20px;
+        .textos{
+            h2{
+                width: 100%;
+                color: white;
+                text-align: center;
+                font-size: 45px;
+                padding: 25px;
+            }
+            p{
+                width: 100%;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+    .galeria{
+        padding: 50px 0;
+        h3{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .contenedor-galeria{
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+            gap: 20px;
+            .foto1{
+                grid-area: 1 / 1 / 3 / 3;
+            }
+            .foto4{
+                grid-area: 3 / 2 / 5 / 4;
+            }
+            .foto-galeria{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: -1px 1px 42px -13px rgba(255,255,255,0.72);
+                    -webkit-box-shadow: -1px 1px 42px -13px rgba(255,255,255,0.72);
+                    -moz-box-shadow: -1px 1px 42px -13px rgba(255,255,255,0.72);
+                }
+                &:hover{
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+}
+/*---------PRODUCTOS---------*/
+main{
+    .nproductos{
+        width: 100%;
+        padding-bottom: 25px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h2{
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: 45px;
+            padding: 50px 0 15px 0;
+        }
+        p{
+            width: 100%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px 0 50px 0;
+        }
+    }
+    .productos-rec{
+        .contenedor-tarjetas{
+            .tarjetas{
+                .imagen-tarjeta{
+                    img{
+                        width: 200px;
+                        height: 280px;
+                    }
+                }
+                .contenido-tarjeta{
+                    .texto-tarjetas{
+                        h3{
+                            margin-bottom: 20px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*---------NOSOTROS---------*/
+main{
+    section{
+        .contenedor-video{
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: block;
+            outline: none;
+            video{
+                position: relative;
+                width: 100%;
+                height: auto;
+                outline: none;
+            }
+            .cuadro{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(44, 44, 44, 0.781);
+                padding: 50px;
+                text-align: center;
+                color: white;
+                z-index: 1;
+                width: 80%;
+                max-width: 600px;
+                h2{
+                    font-size: 35px;
+                    padding-bottom: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                .sabermas{
+                    padding-top: 25px;
+                    a{
+                        background-color: red;
+                        border-radius: 3px;
+                        font-size: 15px;
+                        color: white;
+                        padding: 10px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        .ambiente{
+            width: 1600px;
+            margin: auto;
+            padding: 150px 0 150px 0;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .texto-ambiente{
+                order: 2;
+                width: 600px;
+                h3{
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .imagen-ambiente{
+                width: 300px;
+            }
+        }
+    }
+}
+/*---------CONTACTO---------*/
+main{
+    .contacto{
+        margin-bottom: 100px;
+        h2{
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 60px;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin: 10px 0 80px 0;
+        }
+        .contenedor-contacto{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            .container{
+                div{
+                    div{
+                        .contenedor-mapa{
+                            width: 650px;
+                            order: 1;
+                            h3{
+                                text-align: center;
+                                color: white;
+                                font-size: 30px;
+                                padding-bottom: 20px;
+                            }
+                            iframe{
+                                width: 100%;
+                                flex: 1;
+                            }
+                        }
+                    }
+                    div{
+                        .formulario{
+                            margin-left: 100px;
+                            .form-group{
+                                label{
+                                    display: block;
+                                    text-align: center;
+                                    padding: 10px 0 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*---------SERVICIOS---------*/
+main{
+    section{
+        .contenedor-servicios-top{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            .servicios-top{
+                color: white;
+                text-align: center;
+                width: 750px;
+                margin: auto;
+                padding-top: 90px;
+                order: 2;
+                h2{
+                    font-size: 45px;
+                    margin-bottom: 50px;
+                }
+                p{
+                    font-size: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+            .detail-video{
+                width: 600px;
+                margin: auto;
+            }
+        }
+    }
+    section{
+        .servicios{
+            h3{
+                color: white;
+                font-size: 45px;
+                text-align: center;
+                margin: 50px 0 80px 0;
+            }
+        }
+        .contenedor-tarjetas{
+            .tarjetas{
+                .imagen-tarjeta-sv{
+                    img{
+                        width: 300px;
+                        height: 330px;
+                    }
+                }
+            }
+        }
+    }
+}

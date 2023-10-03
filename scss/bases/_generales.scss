@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black !important;
+    font-family: 'Sen', sans-serif !important;
+}
+
+.mi-color{
+    background-color: #ff4057;
+}
+
+.mi-boton{
+    background-color: red;
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    &:hover{
+        background-color: white;
+        color: red;
+        border: 1px solid red;
+    }
+}
+
+.input-transparente{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    resize: none;
+    &:focus{
+        background-color: transparent;
+        caret-color: white;
+        color: white;
+    }
+}
+
+.isOn {
+    &:hover{
+        background-color: white;
+        color: red;
+        border: 1px solid red;
+    }
+}
+
+.estilo-texto{
+    font-weight: 700;
+    color: white;
+    font-size: 23px;
+}
+
+/*---------DISEÑO TARJETAS---------*/
+
+.contenedor-tarjetas{
+    width: 100%;
+    max-width: 1400px;
+    height: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0 50px 0;
+}
+
+.tarjetas{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.281);
+    padding: 10px;
+}
+
+.contenido-tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-tarjetas{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.boton-compra a{
+    background-color: red;
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
