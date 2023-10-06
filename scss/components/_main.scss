@@ -216,6 +216,7 @@ main{
             justify-content: center;
             align-items: center;
             gap: 100px;
+            overflow: hidden;
             .container{
                 div{
                     div{
@@ -262,6 +263,7 @@ main{
             justify-content: center;
             padding-top: 70px;
             padding-bottom: 70px;
+            overflow: hidden;
             .servicios-top{
                 color: map-get($map: $colores-paleta, $key: texto);
                 text-align: center;
