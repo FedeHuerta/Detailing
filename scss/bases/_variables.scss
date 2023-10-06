@@ -1,0 +1,24 @@
+//! MAPAS
+$colores-paleta: (
+    principal: #ff4057,
+    secundario: white,
+    terciario: red,
+    texto: white,
+);
+
+//! EXTENDS
+
+%isOn{
+    &:hover{
+        background-color: map-get($map: $colores-paleta, $key: secundario);
+        color: map-get($map: $colores-paleta, $key: principal);
+        border: 1px solid map-get($map: $colores-paleta, $key: principal);
+    }
+}
+
+%anim{
+    transition: 0.4s;
+    &:hover{
+        transform: scale(1.02);
+    }
+}

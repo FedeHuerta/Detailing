@@ -9,51 +9,44 @@
 body{
     background-color: black !important;
     font-family: 'Sen', sans-serif !important;
+    font-style: inherit;
 }
 
 .mi-color{
-    background-color: #ff4057;
+    background-color: map-get($map: $colores-paleta, $key: principal);
 }
 
 .mi-boton{
-    background-color: red;
+    background-color: map-get($map: $colores-paleta, $key: terciario);
     border-radius: 3px;
     font-size: 15px;
-    color: white;
+    color: map-get($map: $colores-paleta, $key: texto);
     padding: 10px;
     text-decoration: none;
     margin-top: 10px;
     &:hover{
-        background-color: white;
-        color: red;
-        border: 1px solid red;
+        background-color: map-get($map: $colores-paleta, $key: secundario);
+        color: map-get($map: $colores-paleta, $key: terciario);
+        border: 1px solid map-get($map: $colores-paleta, $key: terciario);
     }
 }
 
 .input-transparente{
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid white;
-    color: white;
+    border-bottom: 2px solid map-get($map: $colores-paleta, $key: secundario);
+    color: map-get($map: $colores-paleta, $key: texto);
     resize: none;
     &:focus{
         background-color: transparent;
         caret-color: white;
-        color: white;
-    }
-}
-
-.isOn {
-    &:hover{
-        background-color: white;
-        color: red;
-        border: 1px solid red;
+        color: map-get($map: $colores-paleta, $key: texto);
     }
 }
 
 .estilo-texto{
     font-weight: 700;
-    color: white;
+    color: map-get($map: $colores-paleta, $key: texto);
     font-size: 23px;
 }
 
@@ -84,16 +77,16 @@ body{
 }
 
 .texto-tarjetas{
-    color: white;
+    color: map-get($map: $colores-paleta, $key: texto);
     text-align: center;
     width: 100%;
 }
 
 .boton-compra a{
-    background-color: red;
+    background-color: map-get($map: $colores-paleta, $key: terciario);
     border-radius: 3px;
     font-size: 15px;
-    color: white;
+    color: map-get($map: $colores-paleta, $key: texto);
     padding: 10px;
     text-decoration: none;
     margin-top: 10px;

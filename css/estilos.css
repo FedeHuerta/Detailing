@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .boton-compra a:hover, main section .contenedor-video .cuadro .sabermas a:hover, main section .contenedor-tarjetas .tarjetas .contenido-tarjeta .boton-compra a:hover {
+  background-color: white;
+  color: #ff4057;
+  border: 1px solid #ff4057; }
+
+main .galeria .contenedor-galeria .foto-galeria, main .productos-rec .contenedor-tarjetas .tarjetas, main section .contenedor-tarjetas .tarjetas {
+  transition: 0.4s; }
+  main .galeria .contenedor-galeria .foto-galeria:hover, main .productos-rec .contenedor-tarjetas .tarjetas:hover, main section .contenedor-tarjetas .tarjetas:hover {
+    transform: scale(1.02); }
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +17,8 @@
 
 body {
   background-color: black !important;
-  font-family: 'Sen', sans-serif !important; }
+  font-family: 'Sen', sans-serif !important;
+  font-style: inherit; }
 
 .mi-color {
   background-color: #ff4057; }
@@ -35,11 +46,6 @@ body {
     background-color: transparent;
     caret-color: white;
     color: white; }
-
-.isOn:hover {
-  background-color: white;
-  color: red;
-  border: 1px solid red; }
 
 .estilo-texto {
   font-weight: 700;
@@ -156,12 +162,11 @@ main .galeria {
       grid-area: 3 / 2 / 5 / 4; }
     main .galeria .contenedor-galeria .foto-galeria img {
       width: 100%;
-      height: 100%;
+      height: 100%; }
+    main .galeria .contenedor-galeria .foto-galeria:hover {
       box-shadow: -1px 1px 42px -13px rgba(255, 255, 255, 0.72);
       -webkit-box-shadow: -1px 1px 42px -13px rgba(255, 255, 255, 0.72);
       -moz-box-shadow: -1px 1px 42px -13px rgba(255, 255, 255, 0.72); }
-    main .galeria .contenedor-galeria .foto-galeria:hover {
-      transform: scale(1.02); }
 
 /*---------PRODUCTOS---------*/
 main .nproductos {
