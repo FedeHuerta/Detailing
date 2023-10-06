@@ -12,6 +12,14 @@ body{
     font-style: inherit;
 }
 
+main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url("../../img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
 .mi-color{
     background-color: map-get($map: $colores-paleta, $key: principal);
 }
@@ -65,7 +73,7 @@ body{
 
 .tarjetas{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.281);
+    background-color: rgba(22, 22, 22, 0.781);
     padding: 10px;
 }
 

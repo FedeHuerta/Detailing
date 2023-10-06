@@ -64,7 +64,7 @@
         }
     }
     main{
-        .whoami{
+        .hero{
             width: 100%;
             padding: 10px;
             .textos{
@@ -138,7 +138,7 @@
         }
     }
     main{
-        .whoami{
+        .hero{
             width: 100%;
             padding: 10px;
             .textos{
@@ -278,9 +278,9 @@
     main{
         section{
             .contenedor-video{
-                height: auto; 
+                height: 100vh; 
                 .cuadro{
-                    width: 90%; 
+                    width: 80%; 
                     padding: 30px;
                     h2{
                         font-size: 25px;
@@ -318,9 +318,9 @@
     main{
         section{
             .contenedor-video{
-                height: auto;
+                height: 500px;
                 .cuadro{
-                    width: 90%;
+                    width: 80%;
                     padding: 15px;
                     h2{
                         font-size: 18px;
@@ -343,7 +343,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                margin-top: 70px;
+                padding: 70px 0 70px 0;
                 .texto-ambiente{
                     width: 90%;
                     margin-bottom: 10px;
@@ -360,11 +360,6 @@
                 }
             }
         }
-    }
-    .footer-nosotros{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
     }
 }
 @media screen and (max-width: 480px){
@@ -383,11 +378,11 @@
                         padding-bottom: 10px;
                     }
                     p{
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                     .sabermas{
                         a{
-                            font-size: 10px;
+                            font-size: 14px;
                             padding: 6px;
                         }
                     }
@@ -403,14 +398,14 @@
                 .cuadro{
                     width: 90%;
                     h2{
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                     p{
-                        font-size: 8px;
+                        font-size: 14px;
                     }
                     .sabermas{
                         a{
-                            font-size: 8px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -426,14 +421,14 @@
                     width: 80%;
                     padding: 8px;
                     h2{
-                        font-size: 8px;
+                        font-size: 14px;
                     }
                     p{
-                        font-size: 4px;
+                        font-size: 14px;
                     }
                     .sabermas{
                         a{
-                            font-size: 4px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -494,7 +489,7 @@
         .contacto{
             h2{
                 font-size: 24px;
-                margin-top: 40px;
+                padding-top: 40px;
             }
             p{
                 font-size: 20px;
