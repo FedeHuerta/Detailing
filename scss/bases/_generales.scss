@@ -13,10 +13,9 @@ body{
 }
 
 main{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url("../../img/bg1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url("../img/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: darken;
     background-attachment: fixed;
 }
 
