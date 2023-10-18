@@ -186,24 +186,24 @@ main .nproductos {
   align-items: center;
   justify-content: center;
   text-align: center; }
-  main .nproductos h2 {
+  main .nproductos h1 {
     width: 100%;
     color: white;
     text-align: center;
-    font-size: 45px;
-    padding: 50px 0 15px 0; }
+    font-size: 40px;
+    padding: 50px 0 10px 0; }
   main .nproductos p {
-    width: 100%;
+    width: 80%;
     color: white;
     font-size: 30px;
     text-align: center;
-    margin: 20px 0 50px 0; }
+    margin: 15px 0 50px 0; }
 
 main .productos-rec .contenedor-tarjetas .tarjetas .imagen-tarjeta img {
   width: 200px;
   height: 280px; }
 
-main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .texto-tarjetas h3 {
+main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .texto-tarjetas h2 {
   margin-bottom: 20px;
   overflow: hidden; }
 
@@ -235,7 +235,7 @@ main section .contenedor-video {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main section .contenedor-video .cuadro h2 {
+    main section .contenedor-video .cuadro h1 {
       font-size: 35px;
       padding-bottom: 30px; }
     main section .contenedor-video .cuadro p {
@@ -262,7 +262,7 @@ main section .ambiente {
   main section .ambiente .texto-ambiente {
     order: 2;
     width: 600px; }
-    main section .ambiente .texto-ambiente h3 {
+    main section .ambiente .texto-ambiente h2 {
       font-size: 50px;
       margin-bottom: 30px; }
     main section .ambiente .texto-ambiente p {
@@ -273,7 +273,7 @@ main section .ambiente {
 /*---------CONTACTO---------*/
 main .contacto {
   padding-bottom: 100px; }
-  main .contacto h2 {
+  main .contacto h1 {
     color: white;
     text-align: center;
     font-size: 40px;
@@ -281,7 +281,7 @@ main .contacto {
   main .contacto p {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 37px;
     margin: 10px 0 80px 0; }
   main .contacto .contenedor-contacto {
     width: 100%;
@@ -295,7 +295,7 @@ main .contacto {
     main .contacto .contenedor-contacto .container div div .contenedor-mapa {
       width: 650px;
       order: 1; }
-      main .contacto .contenedor-contacto .container div div .contenedor-mapa h3 {
+      main .contacto .contenedor-contacto .container div div .contenedor-mapa h2 {
         text-align: center;
         color: white;
         font-size: 30px;
@@ -327,7 +327,7 @@ main section .contenedor-servicios-top {
     margin: auto;
     padding-top: 90px;
     order: 2; }
-    main section .contenedor-servicios-top .servicios-top h2 {
+    main section .contenedor-servicios-top .servicios-top h1 {
       font-size: 45px;
       margin-bottom: 50px; }
     main section .contenedor-servicios-top .servicios-top p {
@@ -337,7 +337,7 @@ main section .contenedor-servicios-top {
     width: 600px;
     margin: auto; }
 
-main section .servicios h3 {
+main section .servicios h2 {
   color: white;
   font-size: 45px;
   text-align: center;
@@ -680,7 +680,7 @@ footer {
     main section .contenedor-servicios-top .servicios-top h2 {
       font-size: 20px; }
     main section .contenedor-servicios-top .servicios-top p {
-      font-size: 10px; }
+      font-size: 18px; }
   main section .contenedor-servicios-top .detail-video iframe {
     height: 200px;
     width: 100%;
