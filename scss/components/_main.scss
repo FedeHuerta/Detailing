@@ -54,7 +54,7 @@ main{
                     width: 100%;
                     height: 100%;
                 }
-                @extend %anim;
+                @include anim(0.4s, 1.02);
                 &:hover{
                     box-shadow: -1px 1px 42px -13px rgba(255,255,255,0.72);
                     -webkit-box-shadow: -1px 1px 42px -13px rgba(255,255,255,0.72);
@@ -108,11 +108,11 @@ main{
                     }
                     .boton-compra{
                         a{
-                            @extend %isOn;
+                            @include isOn(map-get($map: $colores-paleta, $key: secundario), map-get($map: $colores-paleta, $key: principal), map-get($map: $colores-paleta, $key: principal));
                         }
                     }
                 }
-                @extend %anim;
+                @include anim(0.4s, 1.02);
             }
         }
     }
@@ -164,7 +164,7 @@ main{
                         color: map-get($map: $colores-paleta, $key: texto);
                         padding: 10px;
                         text-decoration: none;
-                        @extend %isOn;
+                        @include isOn(map-get($map: $colores-paleta, $key: secundario), map-get($map: $colores-paleta, $key: principal), map-get($map: $colores-paleta, $key: principal));
                     }
                 }
             }
@@ -311,11 +311,11 @@ main{
                 .contenido-tarjeta{
                     .boton-compra{
                         a{
-                            @extend %isOn;
+                            @include isOn(map-get($map: $colores-paleta, $key: secundario), map-get($map: $colores-paleta, $key: principal), map-get($map: $colores-paleta, $key: principal));
                         }
                     }
                 }
-                @extend %anim;
+                @include anim(0.4s, 1.02);
             }
         }
     }

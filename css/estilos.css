@@ -1,15 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
-main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .boton-compra a:hover, main section .contenedor-video .cuadro .sabermas a:hover, main section .contenedor-tarjetas .tarjetas .contenido-tarjeta .boton-compra a:hover {
-  background-color: white;
-  color: #ff4057;
-  border: 1px solid #ff4057; }
-
-main .galeria .contenedor-galeria .foto-galeria, main .productos-rec .contenedor-tarjetas .tarjetas, main section .contenedor-tarjetas .tarjetas {
-  transition: 0.4s; }
-  main .galeria .contenedor-galeria .foto-galeria:hover, main .productos-rec .contenedor-tarjetas .tarjetas:hover, main section .contenedor-tarjetas .tarjetas:hover {
-    transform: scale(1.02); }
-
 * {
   margin: 0;
   padding: 0;
@@ -167,10 +157,13 @@ main .galeria {
     main .galeria .contenedor-galeria .foto4 {
       grid-area: 3 / 2 / 5 / 4; }
     main .galeria .contenedor-galeria .foto-galeria {
-      border: 2px solid rgba(0, 0, 0, 0.5); }
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      transition: 0.4s; }
       main .galeria .contenedor-galeria .foto-galeria img {
         width: 100%;
         height: 100%; }
+      main .galeria .contenedor-galeria .foto-galeria:hover {
+        transform: scale(1.02); }
       main .galeria .contenedor-galeria .foto-galeria:hover {
         box-shadow: -1px 1px 42px -13px rgba(255, 255, 255, 0.72);
         -webkit-box-shadow: -1px 1px 42px -13px rgba(255, 255, 255, 0.72);
@@ -199,13 +192,20 @@ main .nproductos {
     text-align: center;
     margin: 15px 0 50px 0; }
 
-main .productos-rec .contenedor-tarjetas .tarjetas .imagen-tarjeta img {
-  width: 200px;
-  height: 280px; }
-
-main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .texto-tarjetas h2 {
-  margin-bottom: 20px;
-  overflow: hidden; }
+main .productos-rec .contenedor-tarjetas .tarjetas {
+  transition: 0.4s; }
+  main .productos-rec .contenedor-tarjetas .tarjetas .imagen-tarjeta img {
+    width: 200px;
+    height: 280px; }
+  main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .texto-tarjetas h2 {
+    margin-bottom: 20px;
+    overflow: hidden; }
+  main .productos-rec .contenedor-tarjetas .tarjetas .contenido-tarjeta .boton-compra a:hover {
+    background-color: white;
+    color: #ff4057;
+    border: 1px solid #ff4057; }
+  main .productos-rec .contenedor-tarjetas .tarjetas:hover {
+    transform: scale(1.02); }
 
 /*---------NOSOTROS---------*/
 main section .contenedor-video {
@@ -249,6 +249,10 @@ main section .contenedor-video {
         color: white;
         padding: 10px;
         text-decoration: none; }
+        main section .contenedor-video .cuadro .sabermas a:hover {
+          background-color: white;
+          color: #ff4057;
+          border: 1px solid #ff4057; }
 
 main section .ambiente {
   width: 1600px;
@@ -343,9 +347,17 @@ main section .servicios h2 {
   text-align: center;
   margin: 50px 0 80px 0; }
 
-main section .contenedor-tarjetas .tarjetas .imagen-tarjeta-sv img {
-  width: 300px;
-  height: 330px; }
+main section .contenedor-tarjetas .tarjetas {
+  transition: 0.4s; }
+  main section .contenedor-tarjetas .tarjetas .imagen-tarjeta-sv img {
+    width: 300px;
+    height: 330px; }
+  main section .contenedor-tarjetas .tarjetas .contenido-tarjeta .boton-compra a:hover {
+    background-color: white;
+    color: #ff4057;
+    border: 1px solid #ff4057; }
+  main section .contenedor-tarjetas .tarjetas:hover {
+    transform: scale(1.02); }
 
 footer {
   display: flex;

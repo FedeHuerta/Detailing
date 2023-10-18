@@ -6,19 +6,19 @@ $colores-paleta: (
     texto: white,
 );
 
-//! EXTENDS
+//! MIXINS
 
-%isOn{
-    &:hover{
-        background-color: map-get($map: $colores-paleta, $key: secundario);
-        color: map-get($map: $colores-paleta, $key: principal);
-        border: 1px solid map-get($map: $colores-paleta, $key: principal);
+@mixin isOn($bg-color, $text-color, $border-color) {
+    &:hover {
+        background-color: $bg-color;
+        color: $text-color;
+        border: 1px solid $border-color;
     }
 }
 
-%anim{
-    transition: 0.4s;
-    &:hover{
-        transform: scale(1.02);
+@mixin anim($transition-time, $scale-factor) {
+    transition: $transition-time;
+    &:hover {
+        transform: scale($scale-factor);
     }
 }
